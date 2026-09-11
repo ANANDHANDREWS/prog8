@@ -1,30 +1,43 @@
-#!/bin/bash
+!/bin/bash
 
 # ==========================================
 # Managing Firewall Services using firewalld
 #
-# Student Name:
-# Roll Number:
+# Student Name:kabilesh c
+# Roll Number:1U24IT048
 # ==========================================
 
+
 # Check current firewall services
-sudo firewall-cmd --list-services
+firewall-cmd --list-services
+
+
 
 # Allow HTTP service
-sudo firewall-cmd --permanent --add-service=http
+firewall-cmd --add-service=http
+
 
 # Allow HTTPS service
-sudo firewall-cmd --permanent --add-service=https
+firewall-cmd --add-service=https
+
+
+
+
 
 # Display enabled services
-sudo firewall-cmd --permanent --list-services
+firewall-cmd --list-services
+
 
 # Remove HTTP service
-sudo firewall-cmd --permanent --remove-service=http
+firewall-cmd --remove-service=http
+
+
+
 
 # Allow SSH permanently
-sudo firewall-cmd --permanent --add-service=ssh
+firewall-cmd --add-service=ssh --permanent
+
+
 
 # Reload firewall configuration
-sudo firewall-cmd --reload
-
+firewall-cmd --reload
