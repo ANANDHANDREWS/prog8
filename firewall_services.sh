@@ -27,3 +27,4 @@ sudo firewall-cmd --permanent --add-service=ssh
 
 # Reload firewall configuration
 sudo firewall-cmd --reload
+
